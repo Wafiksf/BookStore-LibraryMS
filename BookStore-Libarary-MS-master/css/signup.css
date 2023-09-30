@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --red: #C12E2A;
+    --yellow: #FCB940;
+    --orange: #1886a9;
+    --grey: #F5F5F5;
+  }
+  
+*{
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container-su{
+    display: flex;
+    background-color: #F5BF5E;
+}
+.part1-su{
+    flex: 1;
+}
+.part2-su{
+    flex:1;
+    padding-top: 80px;
+    padding-right: 80px;
+}
+.inputs-signup{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+
+}
+.inputs-signup h1{
+    width: 300px;
+    height: 88px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 75px;
+    text-align: center;
+    color: #FFFFFF;
+}
+.case{
+    width: 350px;
+    height: 50px;
+    background-color: transparent;
+    border: 2px solid #FFFFFF;
+    backdrop-filter: blur(2px);
+    border-radius: 50px;
+    font-size: larger;
+    padding: 10px;
+    color: #FFFFFF;
+}
+.case:focus{
+  border-color: #fff;
+  outline: none;
+  box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.75);
+}
+.submit-su{
+    width: 160px;
+    height: 50px;
+    color: var(--yellow);
+    font-size: medium;
+    background: #F5F5F5;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    border: #F5F5F5;
+    cursor: pointer;
+    transition: 0.4s;
+}
+.submit-su:hover{
+  box-shadow: 0px 0px 10px #fff;
+  letter-spacing: 0.5px;
+}
+
+.button-su{
+    display: flex;
+    justify-content: center;
+}
+.case::placeholder{
+    color: #F5F5F5;
+}
+@media (max-width: 1199px){
+  .part2-su{
+    display: none;
+  }
+  .part1-su{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+  }
+}
+@media (max-width: 800px){
+  .inputs-signup h1{
+    font-size: 45px;
+  }
+  .case{
+    font-size: medium;
+    width: 300px;
+    height: 45px;
+  }
+  .submit-su{
+    width: 140px;
+    height: 45px;
+    font-size: small;
+  }
+}
+@media (max-width: 800px){
+  .inputs-signup h1{
+    font-size: 45px;
+  }
+  .case{
+    font-size: medium;
+    width: 300px;
+    height: 45px;
+  }
+  .submit-su{
+    width: 140px;
+    height: 45px;
+    font-size: small;
+  }
+}
+@media (max-width: 800px){
+  .inputs-signup h1{
+    font-size: 30px;
+  }
+  .case{
+    font-size: small;
+    width: 280px;
+    height: 40px;
+  }
+  .submit-su{
+    width: 120px;
+    height: 45px;
+    font-size: small;
+  }
+}
+

@@ -1,0 +1,116 @@
+/* main */
+.description {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 20px 90px;
+}
+
+.res-container {
+  display: flex;
+  justify-content: space-around;
+  margin: 0 30px;
+}
+
+.res-container2 {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 450px;
+  border-radius: 20px;
+  background-color: #FCB940c6;
+  margin: 15px 80px;
+  padding: 20px;
+}
+
+.image {
+  flex: 1;
+  justify-content: space-around;
+  max-width: fit-content;
+  padding-right: 5%;
+}
+
+.res-h2 {
+  text-align: center;
+}
+
+.form-group {
+  width: 410px;
+  padding-right: 10px;
+  margin-top: 5px;
+  border-radius: 3px;
+}
+
+.form-group-ls {
+  width: 400px;
+  padding: 8px;
+  margin-top: 5px;
+  border-radius: 50px;
+  border: 1px solid #ccc;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 8px;
+  border-radius: 50px;
+  border: 1px solid #ccc;
+}
+
+.res-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.res-btn button {
+  width: 250px;
+  padding: 8px;
+  margin-top: 10px;
+  background-color: #fff;
+  border-radius: 3px;
+  color: var(--yellow);
+  border: none;
+  cursor: pointer;
+}
+
+.res-btn button:hover {
+  background-color: var(--yellow);
+  color: #fff;
+}
+
+@media (max-width: 900px) {
+  .res-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .image {
+    display: none;
+  }
+
+  .res-container2 {
+    margin: 15px 0;
+  }
+}
+@media (max-width: 480px) {
+    .description {
+      margin: 20px 30px;
+    }
+  
+    .res-container2 {
+      margin: 15px;
+    }
+  
+    .form-group,
+    .form-group-ls {
+      width: 100%;
+    }
+  
+    .res-btn button {
+      width: 100%;
+    }
+  }

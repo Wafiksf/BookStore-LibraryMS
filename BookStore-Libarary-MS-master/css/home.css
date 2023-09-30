@@ -1,0 +1,682 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+  --red: #C12E2A;
+  --yellow: #FCB940;
+  --orange: #1886a9;
+  --grey: #F5F5F5;
+}
+
+* {
+  font-family: 'raleway', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  outline: none;
+}
+
+body{
+  overflow-x: hidden;
+}
+
+/*main with background and books for all*/
+.first-sec {
+  margin: 0px 40px;
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  background: url(images/main-img1.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: scroll;
+  border-radius: 20px;
+}
+.donation-content{
+  margin: 30px 40px;
+  padding: 30px;
+  min-height: 30vh;
+  border-radius: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+
+.books-for-all {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 80px;
+  margin-bottom: 60px;
+}
+
+.title_cont,
+.B_F,
+.O_R,
+.K_ALL {
+  position: relative;
+  float: left;
+}
+
+.B_F p,
+.O_R p {
+  margin: 0;
+  font-size: 8em;
+  font-weight: 300;
+  color: black;
+  margin-bottom: -60px;
+}
+
+.O {
+  position: relative;
+  float: left;
+  margin: 0 2px 0 2px;
+  top: 45px;
+  width: 90px;
+  height: 240px;
+  border: 4px solid black;
+  border-radius: 50px;
+  animation: colorChange 6s infinite;
+}
+.main{
+  margin-bottom: 70px;
+  margin-top: 20px;
+}
+
+@keyframes colorChange {
+  0% {
+    background-color: var(--orange);
+  }
+
+  33.33% {
+    background-color: var(--red);
+  }
+
+  66.66% {
+    background-color: var(--yellow);
+  }
+
+  100% {
+    background-color: var(--orange);
+  }
+}
+
+
+
+
+.K_ALL p {
+  margin: 0;
+  font-size: 8em;
+  font-weight: 300;
+  color: black;
+  margin-bottom: -60px;
+}
+
+.K_All .ALL {
+  margin-left: 4px;
+  margin-bottom: -60px;
+}
+
+/*Title for each slide show*/
+.title {
+  display: flex;
+  justify-content: center;
+  color: black;
+  font-size: 50px;
+  font-weight: 800;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  font-weight: normal;
+}
+
+/*colored section text and image*/
+.description {
+  display: flex;
+  padding: 50px;
+}
+
+.left-part {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.right-part {
+  flex: 1;
+  display: flex;
+}
+
+.text-cont {
+  background-color: var(--red);
+  margin: 30px 70px 30px 30px;
+  border-radius: 20px;
+  padding: 20px;
+  font-size: 20px;
+  color: #fff;
+  box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-cont p {
+  line-height: 1.5;
+  text-align: justify;
+}
+
+.description1 {
+  display: flex;
+  padding: 50px;
+}
+
+.left-part1 {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.right-part1 {
+  flex: 1;
+  display: flex;
+}
+
+.text-cont1 {
+  background-color: var(--orange);
+  margin: 30px 30px 30px 70px;
+  border-radius: 20px;
+  padding: 20px;
+  font-size: 20px;
+  color: #fff;
+  box-shadow: -8px 8px 8px rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-cont1 p {
+  line-height: 1.5;
+  text-align: justify;
+}
+
+.right-img1 {
+  padding-left: 70px;
+}
+
+
+
+
+/*hr*/
+.hr-divid {
+  margin: 0px 70px;
+}
+
+/*Slid Show */
+
+.book-slide {
+  width: 100%;
+  margin-bottom: 125px;
+}
+
+.book {
+  background: #fff;
+}
+
+.book-cell {
+  position: relative;
+  display: flex;
+  padding: 25px;
+  width: 40%;
+  height: 250px;
+  margin: 0px 20px;
+  border-radius: 20px;
+}
+
+.book-cell:nth-child(1) {
+  background-color: #fbadaf;
+}
+
+.book-cell:nth-child(2) {
+  background-color: #a4e0eb;
+}
+
+.book-cell:nth-child(3) {
+  background-color: #edb9d6;
+}
+
+.book-cell:nth-child(4) {
+  background-color: #fdca95;
+}
+
+.book-cell:nth-child(5) {
+  background-color: #cbb5e2;
+}.book-slide {
+  width: 100%;
+}
+
+.book {
+  background: #fff;
+}
+
+.book-cell {
+  position: relative;
+  display: flex;
+  padding: 25px;
+  width: 40%;
+  height: 250px;
+  margin-right: 1px;
+}
+
+.book-cell:nth-child(1) {
+  background-color: #1886a9c2;
+}
+
+.book-cell:nth-child(2) {
+  background-color: #C12E2Ac2;
+}
+
+.book-cell:nth-child(3) {
+  background-color: #FCB940c2;
+}
+
+.book-cell:nth-child(4) {
+  background-color: #1886a9c2;
+}
+
+.book-cell:nth-child(5) {
+  background-color: #C12E2Ac2;
+}
+
+.book-cell:nth-child(6) {
+  background-color: #fcba40c2;
+}
+
+.flickity-page-dots {
+  display: none;
+}
+
+.flickity-prev-next-button .arrow {
+  fill: #d6d6d6;
+}
+
+.flickity-prev-next-button svg {
+  left: 25%;
+  top: 25%;
+  width: 50%;
+  height: 50%;
+}
+
+.flickity-prev-next-button.previous {
+  left: 15px;
+}
+
+.flickity-prev-next-button.next {
+  right: 15px;
+}
+
+.flickity-viewport {
+  overflow: visible;
+}
+
+.book-photo {
+  width: 180px;
+  flex-shrink: 0;
+  bottom: -35px;
+  left: 35px;
+  border-radius: 2px;
+  box-shadow: -2px 6px 19px 0px #7f818e;
+  transition: 0.3s ease;
+}
+
+.book-photo:hover {
+  transform: scale(1.03);
+}
+
+.book-img {
+  flex-shrink: 0;
+}
+
+.book-title {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.book-title {
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.book-author {
+  margin-top: 0px;
+  font-size: 14px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.book-content {
+  padding: 0 20px;
+  color: #ffffff;
+  overflow: hidden;
+}
+
+fieldset,
+label {
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+h1 {
+  font-size: 0.5em;
+  margin: 10px;
+}
+
+.rating {
+  border: none;
+}
+
+.rating>input {
+  display: none;
+}
+
+.rating>label:before {
+  margin-right: 5px;
+  margin-top: 0px;
+  font-size: 0.9em;
+  font-family: FontAwesome;
+  display: inline-block;
+  content: "";
+}
+
+.rating>label {
+  color: #fff;
+  float: right;
+}
+
+.rating>input:checked~label,
+.rating:not(:checked)>label:hover,
+.rating:not(:checked)>label:hover~label {
+  color: var(--orange);
+}
+
+.rating>input:checked+label:hover,
+.rating>input:checked~label:hover,
+.rating>label:hover~input:checked~label,
+.rating>input:checked~label:hover~label {
+  color: var(--orange);
+}
+
+.red>input:checked~label,
+.red:not(:checked)>label:hover,
+.red:not(:checked)>label:hover~label {
+  color: #8f8f8f;
+}
+
+.red>input:checked+label:hover,
+.red>input:checked~label:hover,
+.red>label:hover~input:checked~label,
+.red>input:checked~label:hover~label {
+  color: #8f8f8f;
+}
+
+.yellow>input:checked~label,
+.yellow:not(:checked)>label:hover,
+.yellow:not(:checked)>label:hover~label {
+  color: var(--yellow);
+}
+
+.yellow>input:checked+label:hover,
+.yellow>input:checked~label:hover,
+.yellow>label:hover~input:checked~label,
+.yellow>input:checked~label:hover~label {
+  color: var(--yellow);
+}
+
+
+.book-voters {
+  color: #fff;
+  vertical-align: sub;
+  font-size: 13px;
+  margin-left: 7px;
+  white-space: nowrap;
+  margin-top: 7px;
+}
+
+.book-sum {
+  margin-top: 2px;
+  font-size: 14px;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+.book-see {
+  margin-top: 25px;
+  text-align: center;
+  background-color: #fff;
+  color: var(--orange);
+  font-weight: 600;
+  padding: 8px;
+  font-size: 14px;
+  width: 160px;
+  border-radius: 20px;
+}
+
+.book-see:hover {
+  color: #1886a980;
+}
+
+.book-see.book-red {
+  color: var(--red);
+}
+
+.book-see.book-red:hover {
+  color: #C12E2A80;
+}
+
+.book-see.book-yellow {
+  color: var(--yellow);
+}
+
+.book-see.book-yellow:hover {
+  color: #FCB94080;
+}
+
+@media (max-width: 1103px) {
+  .book-cell {
+    width: 60%;
+  }
+}
+
+@media (max-width: 765px) {
+  .book-cell {
+    width: 80%;
+  }
+}
+
+@media (max-width: 575px) {
+  .book-cell {
+    width: 100%;
+  }
+}
+
+@media (max-width: 458px) {
+  .book-photo {
+    width: 180px;
+  }
+
+  .book-voters {
+    display: none;
+  }
+}
+
+@media (max-width: 420px) {
+  .book-see {
+    width: 120px;
+    font-size: 13px;
+  }
+
+  .book-photo {
+    width: 130px;
+  }
+
+}
+
+@media (max-width: 360px) {
+  .rating>label:before {
+    font-size: 0.8em;
+  }
+}
+
+@media (max-width: 1085px) {
+  .book-rate>label {
+    font-size: 0.7em;
+  }
+}
+
+@media (max-width: 1045px) {
+  .books-of {
+    display: none;
+  }
+}
+
+/* Responsive */
+
+@media (max-width: 900px) {
+
+  /* other */
+  .none-hr{
+    display: none;
+  }
+
+  .head-top{
+    display: none;
+  }
+
+  .navigation {
+      display: none;
+  }
+  
+  .books-for-all{
+    display: none;
+  }
+  .first-sec{
+    background-position: right;
+  }
+  .description{
+    flex-direction: column;
+  }
+  .description1{
+    flex-direction: column;
+  }
+  .first-part{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .footer-logo {
+    margin-bottom: -30px;
+  }
+  .footer-text{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0px;
+    margin: 0px;
+  }
+  .footer-title{
+    padding-left: 0px;
+    margin-bottom: 20px;
+  }
+  .footer-title li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .footer-title h3{
+    margin-top: 10px;
+  }
+  .second-part{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media (max-width: 1100px) {
+  .description{
+    flex-direction: column;
+    padding-right: 0px;
+  }
+  .left-part{
+    justify-content: center;
+    align-items: center;
+  }
+  .right-part1{
+    justify-content: center;
+    align-items: center;
+  }
+  .description1{
+    flex-direction: column;
+    padding-left: 0px;
+  }
+  .footer-text {
+    padding-left: 0px
+  }
+ 
+  .footer-logo h1 {
+    padding: 50px 40px;
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 840px) {
+  .first-sec{
+    background: url(https://cdn.hovia.com/app/uploads/bright-bookcase-design-room-820x532.jpg);
+    margin: 0px 40px;
+    min-height: 40vh;
+    display: flex;
+    background-size: cover;
+    background-position: center;
+    background-attachment: scroll;
+    border-radius: 20px;
+  }
+  header h1 {
+    font-weight: bold;
+    font-size: 20px;
+    color: #000000;
+  }  
+  .title {
+    font-size: 25px;
+  }
+  .left-part {
+    display: none;
+  }
+  .text-cont {
+    font-size: 15px;
+  }
+  .text-cont1 {
+    font-size: 15px;
+  }
+  .right-part1{
+    display: none;
+  }
+  .footer-logo h1 {
+    font-size: 30px;
+  }
+  .footer-title h3 {
+    font-size: 15px;
+  }
+  .footer-title li {
+    font-size: 9px;
+  }
+  .footer-title2{
+    font-size: 10px;
+  }
+  .social-icons a {
+    font-size: small;
+  }
+  
+}

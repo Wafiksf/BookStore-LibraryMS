@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+  --red: #C12E2A;
+  --yellow: #FCB940;
+  --orange: #1886a9;
+  --grey: #F5F5F5;
+}
+
+* {
+    font-family: 'Raleway', sans-serif;
+  }
+  body {
+    background-size: cover;
+    background-color: #fff;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0%;
+    margin: 0%;
+  }
+  .lufy{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    background-color: #F5BF5E; 
+    padding: 60px 0;
+  }
+  .cent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .one-pice{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(255, 254, 252);
+    max-width: 600px;
+    margin-top: -40px;
+    border-radius: 5px;
+    box-shadow: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  }
+  .zoro{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+  }
+  .zoro a{
+    padding-top: 8px;
+    text-decoration: none;
+    color: black;
+  }
+  .zoro i{
+    color: var(--yellow);
+    
+  }
+  .contact-hr{
+    width: 90%;
+    margin: 10px 20px 30px 20px ;
+  }
+  .sanji{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .cont-input{
+   margin:12px ;
+   padding: 10px;
+   width: 520px;
+   border: 2px solid var(--yellow);
+   border-radius: 50px;
+  }
+  .sanji label{
+    color: var(--yellow);
+    font-size: larger;
+  }
+  .sanji textarea{
+    margin:12px ;
+    padding: 10px;
+    width: 93%;
+    border: 2px solid var(--yellow);
+    border-radius: 5px;
+  }
+  .sanji button{
+    padding: 10px;
+    color: #150f05;
+    border: none;
+    background-color: var(--yellow);
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .center-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .usop{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .usop i{
+    color: var(--yellow);
+  }
+
+  

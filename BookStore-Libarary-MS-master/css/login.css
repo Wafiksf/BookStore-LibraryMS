@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+  --red: #C12E2A;
+  --yellow: #FCB940;
+  --orange: #1886a9;
+  --grey: #F5F5F5;
+}
+
+* {
+  font-family: 'Raleway', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container-login {
+  display: flex;
+  background: linear-gradient(
+      66.91deg,
+      rgba(193, 46, 42, 0.51) 0%,
+      #C12E2A 100%
+    )
+    no-repeat center center fixed;
+  background-size: cover;
+}
+
+.part1 {
+  flex: 1;
+}
+
+.img1 {
+  padding: 50px;
+}
+
+.part2 {
+  flex: 1;
+  padding-right: 90px;
+}
+
+.login-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.login-card h1 {
+  width: 300px;
+  height: 88px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 75px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.login-card p {
+  width: 500px;
+  height: 59px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 38px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.usps {
+  width: 350px;
+  height: 50px;
+  background-color: transparent;
+  border: 2px solid #FFFFFF;
+  backdrop-filter: blur(2px);
+  border-radius: 50px;
+  font-size: larger;
+  padding: 10px;
+  color: #FFFFFF;
+}
+
+.usps:focus {
+  border-color: #fff;
+  outline: none;
+  box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.75);
+}
+
+.links {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.button {
+  width: 160px;
+  height: 50px;
+  color: #C12E2A;
+  font-size: medium;
+  background: #F5F5F5;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  border: #F5F5F5;
+  transition: 0.4s;
+}
+
+.button:hover {
+  box-shadow: 0px 0px 10px #fff;
+  letter-spacing: 1px;
+}
+
+.usps::placeholder {
+  color: #FFFFFF;
+}
+
+.links:hover {
+  text-decoration: underline;
+  color: #fff;
+}
+
+.inputs,
+.link {
+  display: flex;
+  flex-direction: column;
+}
+
+.submit {
+  display: flex;
+  justify-content: center;
+}
+
+.cont-forget{
+  background-color: #F5F5F5;
+  padding: 40px;
+  border-radius: 20px;
+  margin: 150px 0;
+}
+.forget{
+  background-color: #1886a9ce;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.confirm-pass{
+  background-color:#FCB940ce;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#verify{
+  background-color: #1886a9;
+  border: none;
+}
+#change-pass{
+  background-color: #FCB940;
+  border: none;
+}
+.msg-forget-green{
+  color: green;
+  font-weight: bold;
+}
+.msg-forget-red{
+  color: red;
+  font-weight: bold;
+}
+
+@media (max-width: 1199px) {
+  .part1 {
+    display: none;
+  }
+
+  .part2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+  }
+}
+
+@media (max-width: 800px) {
+  .login-card h1 {
+    font-size: 50px;
+  }
+
+  .login-card p {
+    font-size: 20px;
+  }
+
+  .usps {
+    font-size: medium;
+    width: 300px;
+    height: 45px;
+  }
+
+  .links {
+    font-size: 15px;
+  }
+
+  .button {
+    width: 140px;
+    height: 45px;
+    font-size: small;
+  }
+}
+
+@media (max-width: 480px) {
+  .login-card h1 {
+    font-size: 40px;
+    width: 250px;
+    height: auto;
+    line-height: 1.2;
+  }
+
+  .login-card p {
+    font-size: 18px;
+    width: 350px;
+  }
+
+  .usps {
+    width: 280px;
+    height: 40px;
+    font-size: small;
+  }
+
+  .links {
+    font-size: 14px;
+  }
+
+  .button {
+    width: 120px;
+    height: 40px;
+    font-size: x-small;
+  }
+}
